@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google Site Verification Code (Sirf ek baar) -->
+    <!-- Google Site Verification Code -->
     <meta name="google-site-verification" content="92rAyPFFCiIIPwPW431_dsHlI8AblXNmTvxjUoAxztI" />
     
     <title>Nexora Digital | Premium Web Development</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- PHOTO ANIMATION CODE -->
+    <style>
+        .portfolio-card img {
+            border-radius: 8px; /* Photo ke kone thode gol karne ke liye */
+        }
+        
+        /* Animation Logic */
+        @keyframes zoomEffect {
+            0%, 100% { transform: scale(1); box-shadow: none; }
+            50% { transform: scale(1.15); box-shadow: 0px 10px 20px rgba(0,0,0,0.4); z-index: 10; position: relative;}
+        }
+        
+        /* Chaaron photos ka timing set kiya hai */
+        .portfolio-card:nth-child(1) img { animation: zoomEffect 4s infinite 0s; }
+        .portfolio-card:nth-child(2) img { animation: zoomEffect 4s infinite 1s; }
+        .portfolio-card:nth-child(3) img { animation: zoomEffect 4s infinite 2s; }
+        .portfolio-card:nth-child(4) img { animation: zoomEffect 4s infinite 3s; }
+    </style>
 </head>
 <body>
 
